@@ -130,6 +130,9 @@
                                     <constraint firstAttribute="width" constant="80" id="uFv-Ad-qjY"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="facebookButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9hw-EU-Pvf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSm-17-jxH" customClass="ABetterSquareButton" customModule="SocialMediaAppRob" customModuleProvider="target">
                                 <rect key="frame" x="82" y="480" width="250" height="37"/>
