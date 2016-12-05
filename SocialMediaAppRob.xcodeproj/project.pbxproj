@@ -19,6 +19,7 @@
 		6B52D0621DF20B4F00E4BE60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B52D0601DF20B4F00E4BE60 /* LaunchScreen.storyboard */; };
 		6B52D06A1DF20BAC00E4BE60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B52D0691DF20BAC00E4BE60 /* GoogleService-Info.plist */; };
 		6B75598A1DF50DB20079D579 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7559891DF50DB20079D579 /* FeedViewController.swift */; };
+		6B7559981DF5F9930079D579 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7559971DF5F9930079D579 /* CircleView.swift */; };
 		8791750B9C120D4AB891FE8D /* Pods_SocialMediaAppRob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028CE8CA8AA22A32D4BF3765 /* Pods_SocialMediaAppRob.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		6B52D0631DF20B4F00E4BE60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B52D0691DF20BAC00E4BE60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6B7559891DF50DB20079D579 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		6B7559971DF5F9930079D579 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				6B17B28E1DF2948A00B739C3 /* RoundButtons.swift */,
 				6B17B2901DF2961B00B739C3 /* ABetterTextField.swift */,
 				6B17B2921DF2976600B739C3 /* ABetterSquareButton.swift */,
+				6B7559971DF5F9930079D579 /* CircleView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B7559981DF5F9930079D579 /* CircleView.swift in Sources */,
 				6B17B2931DF2976600B739C3 /* ABetterSquareButton.swift in Sources */,
 				6B52D05A1DF20B4F00E4BE60 /* SignInViewController.swift in Sources */,
 				6B17B2911DF2961B00B739C3 /* ABetterTextField.swift in Sources */,
