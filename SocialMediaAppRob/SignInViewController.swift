@@ -36,7 +36,8 @@ class SignInViewController: UIViewController {
             } else {
                 print("ROB: Successfully authenticated with Firebase")
                 if let user = user {
-                    self.completeSignIn(id: user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
                 }
             }
         })
@@ -64,12 +65,13 @@ class SignInViewController: UIViewController {
     }
 
     @IBAction func signInButtonPressed(_ sender: Any) {
-        if let email = emailTextField.text, let password = passwordTextField.text {
+        if let email = emailTextField.text, !email.isEmpty, let password = passwordTextField.text, !password.isEmpty {
             FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                 if error == nil {
                     print("ROB: Email user authenticated with Firebase")
                     if let user = user {
-                        self.completeSignIn(id: user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
                     }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
@@ -78,7 +80,8 @@ class SignInViewController: UIViewController {
                         } else {
                             print("ROB: Successfully authenticated with Firebase")
                             if let user = user {
-                                self.completeSignIn(id: user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
                             }
                         }
                     })
@@ -87,7 +90,8 @@ class SignInViewController: UIViewController {
         }
     }
     
-    func completeSignIn(id: String) {
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("ROB: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "GoToFeedViewController", sender: nil)

@@ -20,6 +20,7 @@
 		6B52D06A1DF20BAC00E4BE60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6B52D0691DF20BAC00E4BE60 /* GoogleService-Info.plist */; };
 		6B75598A1DF50DB20079D579 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7559891DF50DB20079D579 /* FeedViewController.swift */; };
 		6B7559981DF5F9930079D579 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7559971DF5F9930079D579 /* CircleView.swift */; };
+		6B75599B1DF628350079D579 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B75599A1DF628350079D579 /* DataService.swift */; };
 		8791750B9C120D4AB891FE8D /* Pods_SocialMediaAppRob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028CE8CA8AA22A32D4BF3765 /* Pods_SocialMediaAppRob.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		6B52D0691DF20BAC00E4BE60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6B7559891DF50DB20079D579 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		6B7559971DF5F9930079D579 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		6B75599A1DF628350079D579 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		6B52D0561DF20B4F00E4BE60 /* SocialMediaAppRob */ = {
 			isa = PBXGroup;
 			children = (
+				6B7559991DF628250079D579 /* Services */,
 				6B17B28B1DF291F900B739C3 /* Utilities(custom) */,
 				6B17B2881DF2133700B739C3 /* Controller */,
 				6B17B2871DF2133400B739C3 /* View */,
@@ -134,6 +137,14 @@
 				6B52D0691DF20BAC00E4BE60 /* GoogleService-Info.plist */,
 			);
 			path = SocialMediaAppRob;
+			sourceTree = "<group>";
+		};
+		6B7559991DF628250079D579 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6B75599A1DF628350079D579 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		B12C15E09453EFF4BC5BD987 /* Frameworks */ = {
@@ -278,6 +289,7 @@
 				6B17B28F1DF2948A00B739C3 /* RoundButtons.swift in Sources */,
 				6B75598A1DF50DB20079D579 /* FeedViewController.swift in Sources */,
 				6B17B28D1DF2920900B739C3 /* Constants.swift in Sources */,
+				6B75599B1DF628350079D579 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

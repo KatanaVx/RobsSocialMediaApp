@@ -23,13 +23,13 @@ class FeedViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//    @IBAction func signOutButtonPressed(_ sender: Any) {
-//        
-//        let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
-//        print("ROB: ID removed from keychain \(keychainResult)")
-//        try! FIRAuth.auth()?.signOut()
-//        performSegue(withIdentifier: "GoToSignInViewController", sender: nil)
-//    
-//    }
+    @IBAction func signOutButtonPressed(_ sender: Any) {
+        
+        let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        print("ROB: ID removed from keychain \(keychainResult)")
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "GoToSignInViewController", sender: nil)
+    
+    }
 
 }
